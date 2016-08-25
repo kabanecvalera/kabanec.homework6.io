@@ -205,7 +205,6 @@ header{
 .catalog{
     width: 909px;
     height: 628px;
-    background: red;
     margin-top: 13px;
     display: inline-block;
 }
@@ -242,7 +241,11 @@ header{
     text-transform: uppercase;
 }
 
-.tires{
+.filters{
+    margin: 0 0 99px 0;
+}
+
+.circles{
     width: 148px;
     height: 26px;
     margin-top: 14px;
@@ -251,7 +254,7 @@ header{
     position: relative;
 }
 
-.tires-blue{
+.circles-blue{
     width: 20px;
     height: 20px;
     background-color: #114165;
@@ -262,7 +265,7 @@ header{
     left: 5px;
 }
 
-.tires-white{
+.circles-white{
     width: 10px;
     height: 10px;
     border: 1px solid #fff;
@@ -273,7 +276,7 @@ header{
     left: 4px;
 }
 
-.tires-txt{
+.circles-txt{
     margin: 4px 0 0 30px;
     font: 14px 'Lucida Sans Unicode';
     font-weight: 400;
@@ -282,33 +285,85 @@ header{
 }
 
 .content-list{
-    margin: 5px 0 0 45px;
+    width: 132px;
+    margin: 3px 0 0 35px;
 }
 
+.content-list ul{
+    list-style: none;
+}
+
+.content-list ul li:before{
+    content: "\25CB";
+    padding: 0 0 0 0;
+}
+
+.content-list ul li a{
+    font: 13px 'Lucida Sans Unicode';
+    font-weight: 400;
+    color: #465961;
+    text-decoration: none;
+    line-height: 25px;
+    letter-spacing: -.4;
+}
+
+.content-list ul li a:hover{
+    font: 14px Arial;
+    font-style: italic;
+    color: #0c3256;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/*правая половина магазина*/
 .counter{
-    width: 530px;
+    width: 525px;
     height: 628px;
-    background: #fff;
-    margin: 0 5px;
-    border: 1px solid black;
+    background-color: white;
+    background-image: linear-gradient(to top, rgba(35, 75, 93, 0.49) 0%, rgba(201, 207, 209, 0.49) 100%);
+    margin: 0 10px;
     float: left;
 }
 
-.company{
+.showcase{
+    display: table;
+    border-spacing: 23px 22px;
+}
+
+.showcase-tr-first,
+.showcase-tr-second,
+.showcase-tr-third{
+    display: table-row;
+}
+
+.model{
+    display: table-cell;
+    border: 1px solid #ccc;
+    width: 138px;
+    height: 172px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    position: relative
+}
+
+.model-image {
+    position: absolute;
+    top: 30px;
+    left: 33px;
+}
+
+.brands{
     width: 181px;
     height: 628px;
-    background: #fff;
-    border: 1px solid black;
-    border-radius: 14px;
     float: left;
 }
 
 .companys{
+    clear: both;
     margin-top: 10px;
     width: 909px;
     height: 60px;
-    background: red;
-    border: 1px solid black;
     position: relative;
 }
 
@@ -361,6 +416,7 @@ header{
 }
 
 footer{
+    clear: both;
     width: 908px;
     height: 100px;
     margin-top: 13px;
