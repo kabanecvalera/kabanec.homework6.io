@@ -40,17 +40,18 @@
     </div>
     
     <header>
-       <div class="menu-left">
+       <div class="menu">
             <ul>
-                <li><a href="#">О КОМПАНИ</a></li>
-                <li><a href="#">ОПЛАТА</a></li>
-                <li><a href="#">ДОСТАВКА</a></li>
-                <li><a href="#">СТАТЬИ</a></li>
-                <li><a href="#">КОНТАКТЫ</a></li>
-            </ul> 
-       </div>
-        
-       
+                <li><a href="#" class="menu-item">О КОМПАНИ</a></li>
+                <li><a href="#" class="menu-item">ОПЛАТА</a></li>
+                <li><a href="#" class="menu-item">ДОСТАВКА</a></li>
+                <li><a href="#" class="menu-item">СТАТЬИ</a></li>
+                <li><a href="#" class="menu-item">КОНТАКТЫ</a></li>
+                <li><a href="#" class="menu-img"></a><img src="img/basket.png" alt=""></li>
+                <li><a href="#" class="menu-buy">товаров:<span class="menu-buy-item">0</span></a></li>
+                <li><a href="#" class="menu-buy">на сумму:<span class="menu-buy-item-last">0,00 грн.</span></a></li>
+            </ul>
+        </div>
     </header>
     
     <!--CONTENT SECTION-->
@@ -293,10 +294,19 @@
                         <p class="circles-txt">ШИНЫ</p>
 
                         <div class="content-list-b">
-                            <div><input type="checkbox" name="option1" value="a1">Бренд1</div>
-                            <div><input type="checkbox" name="option2" value="a2">Бренд2</div>
-                            <div><input type="checkbox" name="option3" value="a3">Бренд3</div>
+                            <div><input type="checkbox" id="c1" name="option1"
+                            value="a1">
+                            <label for="c1"><span></span>Бренд1</label></div>
+                            
+                            <div><input type="checkbox" id="c2" name="option2"
+                            value="a2">
+                            <label for="c2"><span></span>Бренд2</label></div>
+                            
+                            <div><input type="checkbox" id="c3" name="option3"
+                            value="a3">
+                            <label for="c3"><span></span>Бренд3</label></div>
                         </div>
+                        
                     </div>
                 </div>   
 
@@ -309,12 +319,25 @@
                         <p class="circles-txt">ДИСКИ</p>
 
                         <div class="content-list-b">
-                            <div><input type="checkbox" name="option1" value="a1">Бренд1</div>
-                            <div><input type="checkbox" name="option2" value="a2">Бренд2</div>
-                            <div><input type="checkbox" name="option3" value="a3">Бренд3</div>
+                            <div><input type="checkbox" id="c4" name="option4"
+                            value="4">
+                            <label for="c4"><span></span>Бренд1</label></div>
+                            
+                            <div><input type="checkbox" id="c5" name="option5"
+                            value="a5">
+                            <label for="c5"><span></span>Бренд2</label></div>
+                            
+                            <div><input type="checkbox" id="c6" name="option6"
+                            value="a6">
+                            <label for="c6"><span></span>Бренд3</label></div>
                         </div>
                     </div>
                 </div>
+                
+                <div class="button">
+                   <a href="#" class="brands-btn">ВЫБРАТЬ</a>
+                </div>
+                        
             </div>
         
 

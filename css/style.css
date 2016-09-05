@@ -115,36 +115,69 @@ header{
     border-radius: 4px;
     box-shadow: 1.5px 2.6px 5px rgba(0, 0, 0, 0.75);
     margin-top: 2px;
+    
 }
 
-.menu-left{
-    margin-left: 145px;
+.menu{
+    margin-left: 132px;
 }    
 
-.menu-left ul{
+.menu ul{
     overflow: hidden;
     padding: 0;
     list-style: none;
 }
 
-.menu-left li{
+.menu li{
     float: left;
 }
 
-.menu-left a{
+.menu .menu-item{
     display: block;
     font: 14px 'Lucida Sans Unicode';
     font-weight: 400;
     color: #b1bcc0;
     line-height: 34px;
-    padding: 0 28px 0 1px;
+    padding: 0 14.5px 0 14.5px;
     text-decoration: none;
 }
 
-.menu-left a:hover{
+.menu .menu-item:hover{
     color: white;
-    background: blue;
-    border-radius: 10px;
+    background: #436690;
+    height: 25px;
+    line-height: 27px;
+    margin-top: 3px;
+    border-radius: 30px;
+}
+
+.menu-img{
+    padding-left: 53px;
+    line-height: 37px;
+}
+
+.menu-buy{
+    padding: 0 6px 0 6px;
+    font: 400 11px Arial;
+    color: #929b9f;
+    letter-spacing: .7px;
+    line-height: 31px;
+    text-decoration: none;
+}
+
+.menu-buy-item{
+    font: 400 12px Arial;
+    color: #0d5a8f;
+}
+
+.menu-buy:hover{
+    text-decoration: underline;
+}
+
+.menu-buy-item-last{
+    font: 400 12px Arial;
+    color: #0d5a8f;
+    padding-left: 5px;
 }
 
 .search{
@@ -422,6 +455,58 @@ header{
 .content-list-b{
     width: 132px;
     margin: 8px 0 0 22px;
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background: url(../img/spritesheet.png) left top no-repeat;
+    cursor:pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+    background:url(../img/spritesheet.png) -21px top no-repeat;
+}
+
+.button{
+    padding: 10px 0 0 24px;
+}
+
+.brands-btn {
+  background: #1F6787;
+  background-image: -webkit-linear-gradient(top, #1F6787, #0C3357);
+  background-image: -moz-linear-gradient(top, #1F6787, #0C3357);
+  background-image: -ms-linear-gradient(top, #1F6787, #0C3357);
+  background-image: -o-linear-gradient(top, #1F6787, #0C3357);
+  background-image: linear-gradient(to bottom, #1F6787, #0C3357);
+  -webkit-border-radius: 21;
+  -moz-border-radius: 21;
+  border-radius: 21px;
+  -webkit-box-shadow: 2px 2px 0px #DCDDDF;
+  -moz-box-shadow: 2px 2px 0px #DCDDDF;
+  box-shadow: 2px 2px 0px #DCDDDF;
+  font-family: Arial;
+  color: #e5e9ea;
+  font-size: 11px;
+  padding: 7px 15px;
+  border: solid #DCDDDF 1px;
+  text-decoration: none;
+}
+
+.brands-btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
 }
 
 .companys{
